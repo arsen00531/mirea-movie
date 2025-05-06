@@ -3,7 +3,7 @@ import type { TMovieResponse, TMovieTypes } from "../types/movie"
 
 class Movie {
   private apiKey: string = import.meta.env.VITE_API_KEY
-  private basicPath: string = "http://www.omdbapi.com"
+  private basicPath: string = "https://www.omdbapi.com"
 
   async searchMatrix() {
     const response = await axios.get<TMovieResponse>(
